@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       # Step Identifier (required)
-      - name: matrix-8beffec
+      - name: matrix-2f8472f
         run: echo "Building for Node.js version ${{ matrix.node }}"
 
       - name: Setup Node.js
@@ -36,5 +36,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: build-8beffec-v${{ matrix.node }}
+          name: build-2f8472f-v${{ matrix.node }}
           path: output.txt
